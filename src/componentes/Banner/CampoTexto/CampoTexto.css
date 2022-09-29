@@ -14,9 +14,10 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0.06); 
     width: 100%;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     padding: 24px;
     box-sizing: border-box;
+    color: white;
 }
 
 .campo-texto input:focus{
