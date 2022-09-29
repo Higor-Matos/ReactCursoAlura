@@ -6,25 +6,24 @@ import { useState } from 'react'
 
 const Formulario = (props) => {
 
-    const times = [
-        'Games',
-        'Animes',
-        'Desenhos',
-        'Séries',
-        'Filmes'
-    ]
-
     const [nome, setNome] = useState('')
     const [origem, setOrigem] = useState('')
     const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
+   
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
         props.aoColaboradorCadastrado({
             nome,
             origem,
-            imagem
+            imagem,
+            time
         })
+        setNome('')
+        setOrigem('')
+        setImagem('')
+        setTime('')
     }
 
     return(
@@ -52,9 +51,16 @@ const Formulario = (props) => {
                 valor={imagem}
                 aoAlterado={valor => setImagem(valor)}
             />
-            <ListaSuspensa obrigatorio={true}label="Time" itens = {times}/>
+            <ListaSuspensa 
+                obrigatorio={true}
+                label="Time" 
+                itens = {props.times}
+                valor={time}
+                aoAlterado={valor => setTime(valor)}
+            />
             <Botao texto="Criar Card"></Botao>
             </form>
+            
         </section>
     )
 }
