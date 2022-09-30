@@ -23,16 +23,15 @@
 
 .colaborador .rodape h4 {
     color: #6278F7;
-    text-align: initial;
     font-size: 18px;
-    line-height: 22px;
     font-weight: bold;
     margin-bottom: 8px;
+    line-height: 22px;
 }
 
 .colaborador .rodape h5 {
     font-size: 18px;
-    line-height: 22px;
     color: #212121;
+    line-height: 22px;
     padding: 0 16px;
 }

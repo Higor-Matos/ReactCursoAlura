@@ -1,18 +1,19 @@
-.rodape {
-    align-items: center;
-    background-color: #6272a4;
-    background-image: url(/public/imagens/fundo.png);
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 0;
-    width: 100%;
-  }
-  
-  .rodape .logos {
-    display: flex;
-    gap: 32px;
-  }
-  
-  .rodape p {
-    color: white;
-  }
+/* src/componentes/Rodape/Rodape.css */
+.rodape-organo {
+  align-items: center;
+  background-color: #6272a4;
+  background-image: url(/public/imagens/fundo.png);
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.rodape-organo .logos {
+  display: flex;
+  gap: 32px;
+}
+
+.rodape-organo p {
+  color: white;
+}
